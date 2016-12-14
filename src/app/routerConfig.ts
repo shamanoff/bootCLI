@@ -8,8 +8,8 @@ import {AB_ROUTES} from "./aboutRoutes";
 
 
 export const APP_ROUTES: Routes = [
-  {path: ' ',component: Home},
-  {path:  'home', component: Home},
+  {path: '',component: Home},
+  {path:  'home', component: Home, pathMatch: 'full'},
   {path: 'team', component: Team, pathMatch: 'full'},
   {path: 'about', component: About, children: AB_ROUTES},
 
