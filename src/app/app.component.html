@@ -1,3 +1,26 @@
-<h1>
-  {{title}}
-</h1>
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Site Title</li>
+
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/">Home</a></li>
+      <li routerLinkActive="active"><a routerLink="team">Team</a></li>
+      <li routerLinkActive="active"><a routerLink="about">About</a></li>
+
+
+    </ul>
+  </div>
+  <div class="top-bar-right">
+
+  </div>
+</div>
+<div class="row">
+  <div class="medium-12 columns">
+
+  </div>
+</div>
+<div class="row">
+  <div class="medium-12 columns">
+    <router-outlet></router-outlet>
+  </div>
+</div>
