@@ -9,5 +9,4 @@ export const AB_ROUTES: Routes = [
   {path: 'new', component:EditComponent},
   {path: ':id', component:DetailComponent},
   {path: ':id/edit', component:EditComponent}
-
 ];
